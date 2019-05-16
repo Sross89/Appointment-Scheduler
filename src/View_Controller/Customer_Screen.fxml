@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="267.0" prefWidth="690.0" style="-fx-background-color: C2C1C6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.Customer_ScreenController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Customer Information">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="76.0" text="Customer ID:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="110.0" text="Customer Name:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="145.0" text="Primary Address:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="181.0" text="City:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="396.0" layoutY="111.0" text="Phone #:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="364.0" layoutY="181.0" text="Postal Code:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idField" layoutX="186.0" layoutY="75.0" promptText="Automatically generated" />
+      <RadioButton fx:id="activeRadioBtn" layoutX="373.0" layoutY="75.0" mnemonicParsing="false" text="Active">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="notActiveRadioBtn" layoutX="494.0" layoutY="75.0" mnemonicParsing="false" text="Not Active">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="nameField" layoutX="186.0" layoutY="110.0" />
+      <TextField fx:id="addressField" layoutX="186.0" layoutY="145.0" />
+      <TextField fx:id="cityField" layoutX="186.0" layoutY="180.0" />
+      <ComboBox fx:id="countryComboBox" layoutX="14.0" layoutY="181.0" prefHeight="26.0" prefWidth="117.0" />
+      <TextField fx:id="phoneField" layoutX="495.0" layoutY="110.0" />
+      <TextField fx:id="address2Field" layoutX="495.0" layoutY="146.0" />
+      <TextField fx:id="postalCodeField" layoutX="494.0" layoutY="181.0" />
+      <Button fx:id="confirmBtn" layoutX="185.0" layoutY="226.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="304.0" text="Confirm" />
+      <Button fx:id="backBtn" layoutX="494.0" layoutY="226.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Back" />
+      <Label layoutX="361.0" layoutY="146.0" text="2nd Address:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentUserLabel" layoutX="507.0" layoutY="14.0" text="Label" />
+   </children>
+</AnchorPane>
